@@ -102,3 +102,15 @@ window.addEventListener('DOMContentLoaded', function () {
         charts.push(new EasyPieChart(el, options));
     });
 });
+
+
+
+
+
+
+
+
+
+
+
+ 
