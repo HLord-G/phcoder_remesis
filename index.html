@@ -253,14 +253,14 @@
                         <div class="col-lg-7 col-md-6">
                             <div class="about-txt">
                                 <span class="separet-span">About Us</span>
-                                <h3>#1 Animation Studio Presents</h3>
+                                <h3>Powered By Creative Vision</h3>
                                 <p>A creative digital service focused on modern web solutions, creative designs, and reliable online support for businesses and individuals. </p>
                                 <p class="separate-p tab-hider">Dedicated to helping brands grow through professional websites, branding, virtual assistant services, and smart digital solutions that improve online presence and business performance.</p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-10 m-auto about-item col-md-12">
+                <div class="col-lg-10 m-auto about-item col-md-12" hidden>
                     <div class="row">
                         <div class="col-lg-7 col-md-6">
                             <div class="about-txt sm-reduce-pa">
@@ -317,18 +317,18 @@
                 </div>
                 <div class="col-lg-10 m-auto about-item col-md-12">
                     <div class="row">
-                        <div class="col-lg-4 col-sm-8 m-sm-auto text-center col-md-5">
-                            <div class="about-img ai-three">
-                                <img src="src/images/va.png" alt="about-img" class="img-fluid">
-                            </div>
-                        </div>
-                        <div class="col-lg-1 col-md-1"></div>
                         <div class="col-lg-7 col-md-6">
                             <div class="about-txt">
                                 <span class="separet-span">Support</span>
                                 <h3>Virtual Assistant</h3>
                                 <p>Reliable virtual assistant support that helps clients manage daily business tasks such as customer support, scheduling, data entry, graphic design, and online management. A dependable helping hand for businesses that need extra support to stay organized, productive, and focused on growth.</p>
                                 <a href="#">Hire a VA Now</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-1 col-md-1"></div>
+                        <div class="col-lg-4 col-sm-8 m-sm-auto text-center col-md-5">
+                            <div class="about-img ai-three">
+                                <img src="src/images/va.png" alt="about-img" class="img-fluid">
                             </div>
                         </div>
                     </div>
@@ -339,7 +339,7 @@
     <!-- ABOUT AREA ENDS -->
 
     <!-- GALLERY AREA START -->
-    <section id="gallery">
+    <section id="gallery" hidden>
         <div class="container">
             <div class="row header-text text-center">
                 <div class="col-lg-12">
@@ -384,13 +384,13 @@
                     <div class="product-item">
                         <div class="row">
                             <div class="col-lg-8 col-md-7 product-txt">
-                                <span>Made For You</span>
-                                <h3>Today's Collection</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum accusamus iusto facilis reprehenderit saepe consequatur!</p>
-                                <a style="color:white; cursor: pointer;" onclick="openPanel()">Browse All</a>
+                                <span>Modern Web Templates</span>
+                                <h3>Smart Solutions</h3>
+                                <p>Explore high-quality digital products and modern web solutions designed for business, branding, and productivity.</p>
+                                <a style="color:white; cursor: pointer;" onclick="openPanel('ASC', '')">Browse All</a>
                             </div>
-                            <div class="col-lg-4 col-md-4 mob-img-hide">
-                                <img src="src/images/producticons.png" alt="product-img">
+                            <div class="col-lg-4 col-md-4 mob-img-hide" style="z-index:99;">
+                                <img src="src/images/producticons.png" alt="product-img" style="z-index:99;">
                             </div>
                         </div>
                     </div>
@@ -398,10 +398,10 @@
                 <div class="col-lg-1"></div>
                 <div class="col-lg-4">
                     <div class="product-item product-txt">
-                        <span>Limited Offer</span>
-                        <h3>Free HD Streaming</h3>
-                        <p class="next-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse nisi, inventore dicta, officia.</p>
-                        <a href="#">Stream Now</a>
+                        <span>Latest Website Templates</span>
+                        <h3>New Designs</h3>
+                        <p class="next-p">Check out newly created WordPress and HTML templates with fresh modern layouts and styles.</p>
+                        <a href="#"  onclick="openPanel('ASC', 'html')">Explore Now</a>
                     </div>
                 </div>
             </div>
@@ -566,49 +566,79 @@
                 </div>
             </div>
             <div class="row price-pa">
-                <div class="col-lg-3 col-sm-6">
-                    <div class="price-table mob-mar-bottom">
-                        <h3>Free</h3>
-                        <h4><sub>$</sub>0<sub>/mon</sub></h4>
-                        <p><i class="fa fa-check-circle-o" aria-hidden="true"></i> Limited Time</p>
-                        <p><i class="fa fa-check-circle-o" aria-hidden="true"></i> HD quality Video</p>
-                        <p><i class="fa fa-check-circle-o" aria-hidden="true"></i> 1 Personal Account</p>
-                        <div class="price-btn text-center">
-                            <a href="#">Sign up</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-sm-6">
-                    <div class="price-table mob-mar-bottom">
-                        <h3>Personal</h3>
-                        <h4><sub>$</sub>25<sub>/mon</sub></h4>
-                        <p><i class="fa fa-check-circle-o" aria-hidden="true"></i> Limited Time</p>
-                        <p><i class="fa fa-check-circle-o" aria-hidden="true"></i> HD quality Video</p>
-                        <p><i class="fa fa-check-circle-o" aria-hidden="true"></i> 1 Personal Account</p>
+
+                <div class="col-lg-3 col-sm-6 mob-mar-bottom">
+                    <div class="price-table">
+                        <h3>Starter Plan</h3>
+                        <h4><sub>₱</sub>1,500<sub>/Year</sub></h4>
+
+                        <p><i class="fa fa-check-circle-o" aria-hidden="true"></i> Free Sub-domain</p>
+                        <p><i class="fa fa-check-circle-o" aria-hidden="true"></i> 1 Page</p>
+                        <p><i class="fa fa-check-circle-o" aria-hidden="true"></i> Shared Hosting</p>
+                        <p><i class="fa fa-check-circle-o" aria-hidden="true"></i> SSL Security</p>
+                        <p><i class="fa fa-check-circle-o" aria-hidden="true"></i> Mobile Friendly</p>
+                        <p><i class="fa fa-check-circle-o" aria-hidden="true"></i> Basic SEO Ready</p>
+                        <p><i class="fa fa-check-circle-o" aria-hidden="true"></i> Free Support</p>
+
                         <div class="price-btn text-center">
                             <a href="#">Purchase</a>
                         </div>
                     </div>
                 </div>
+  
+                <div class="col-lg-3 col-sm-6 mob-mar-bottom">
+                    <div class="price-table">
+                        <h3>Basic Plan</h3>
+                        <h4><sub>₱</sub>3,500<sub>/Year</sub></h4>
+
+                        <p><i class="fa fa-check-circle-o" aria-hidden="true"></i> Free Domain</p>
+                        <p><i class="fa fa-check-circle-o" aria-hidden="true"></i> 1GB Storage</p>
+                        <p><i class="fa fa-check-circle-o" aria-hidden="true"></i> Shared Hosting</p>
+                        <p><i class="fa fa-check-circle-o" aria-hidden="true"></i> SSL Security</p>
+                        <p><i class="fa fa-check-circle-o" aria-hidden="true"></i> Mobile Friendly</p>
+                        <p><i class="fa fa-check-circle-o" aria-hidden="true"></i> Basic SEO Ready</p>
+                        <p><i class="fa fa-check-circle-o" aria-hidden="true"></i> Free Support</p>
+
+                        <div class="price-btn text-center">
+                            <a href="#">Purchase</a>
+                        </div>
+                    </div>
+                </div>
+
                 <div class="col-lg-3 col-sm-6 mob-mar-bottom">
                     <div class="price-table gold-bg">
-                        <h3 class="gold">Recommend</h3>
-                        <h4><sub>$</sub>99<sub>/Year</sub></h4>
-                        <p><i class="fa fa-check-circle-o" aria-hidden="true"></i> Limited Time</p>
-                        <p><i class="fa fa-check-circle-o" aria-hidden="true"></i> HD quality Video</p>
-                        <p><i class="fa fa-check-circle-o" aria-hidden="true"></i> 1 Personal Account</p>
+                        <h3 class="gold">Starter Pro</h3>
+                        <h4><sub>₱</sub>7,000<sub>/Year</sub></h4>
+
+                        <p><i class="fa fa-check-circle-o" aria-hidden="true"></i> Free Domain</p>
+                        <p><i class="fa fa-check-circle-o" aria-hidden="true"></i> Web Hosting</p>
+                        <p><i class="fa fa-check-circle-o" aria-hidden="true"></i> SSL Security</p>
+                        <p><i class="fa fa-check-circle-o" aria-hidden="true"></i> Contact Form</p>
+                        <p><i class="fa fa-check-circle-o" aria-hidden="true"></i> Mobile Friendly</p>
+                        <p><i class="fa fa-check-circle-o" aria-hidden="true"></i> Google SEO Ready</p>
+                        <p><i class="fa fa-check-circle-o" aria-hidden="true"></i> Free Support</p>
+
                         <div class="price-btn gold-bg2 text-center">
                             <a href="#">Purchase</a>
                         </div>
                     </div>
                 </div>
+
                 <div class="col-lg-3 col-sm-6">
                     <div class="price-table">
-                        <h3>Business</h3>
-                        <h4><sub>$</sub>199<sub>/Year</sub></h4>
-                        <p><i class="fa fa-check-circle-o" aria-hidden="true"></i> Limited Time</p>
-                        <p><i class="fa fa-check-circle-o" aria-hidden="true"></i> HD quality Video</p>
-                        <p><i class="fa fa-check-circle-o" aria-hidden="true"></i> 1 Personal Account</p>
+                        <h3>Business Pro</h3>
+                        <h4><sub>₱</sub>15,000<sub>/Year</sub></h4>
+
+                        <p><i class="fa fa-check-circle-o" aria-hidden="true"></i> Free Domain</p>
+                        <p><i class="fa fa-check-circle-o" aria-hidden="true"></i> Premium Hosting</p>
+                        <p><i class="fa fa-check-circle-o" aria-hidden="true"></i> SSL Security</p>
+                        <p><i class="fa fa-check-circle-o" aria-hidden="true"></i> Mobile Friendly</p>
+                        <p><i class="fa fa-check-circle-o" aria-hidden="true"></i> Advanced SEO</p>
+                        <p><i class="fa fa-check-circle-o" aria-hidden="true"></i> Fast Loading Speed</p>
+                        <p><i class="fa fa-check-circle-o" aria-hidden="true"></i> Booking System</p>
+                        <p><i class="fa fa-check-circle-o" aria-hidden="true"></i> Custom System Development</p>
+                        <p><i class="fa fa-check-circle-o" aria-hidden="true"></i> Priority Support</p>
+
                         <div class="price-btn text-center">
                             <a href="#">Purchase</a>
                         </div>
@@ -723,48 +753,61 @@
             <div class="row contact-pa">
                 <div class="col-lg-8 f-text2">
                     <div class="accordion" id="accordionExample">
+
                         <div class="card">
                             <div class="card-header" id="headingOne">
                                 <h2 class="mb-0">
-                                    <button class="btn btn-link zom" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                        01.How to order properly?
+                                    <button style="white-space: normal; width: 100%; text-align: left;" class="btn btn-link zom" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        01. Why choose our website service?
                                     </button>
                                 </h2>
                             </div>
+
                             <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
                                 <div class="card-body">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem ipsa fugiat, tempore sapiente amet illum, eius, aperiam facilis ad ipsam eveniet itaque recusandae illo debitis?
+                                    We create professional and mobile-friendly WordPress
+                                    websites that help businesses grow online with hosting,
+                                    SSL security, and support included.
                                 </div>
                             </div>
                         </div>
+
                         <div class="card">
                             <div class="card-header" id="headingTwo">
                                 <h2 class="mb-0">
-                                    <button class="btn btn-link collapsed zom" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                        02.Performance and Security?
+                                    <button style="white-space: normal; width: 100%; text-align: left;" class="btn btn-link collapsed zom" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        02. Is the website fast and secure?
                                     </button>
                                 </h2>
                             </div>
+
                             <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
                                 <div class="card-body">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem ipsa fugiat, tempore sapiente amet illum, eius, aperiam facilis ad ipsam eveniet itaque recusandae illo debitis?
+                                    Yes, all websites include SSL security, mobile optimization,
+                                    and speed optimization to make your website secure,
+                                    responsive, and smooth on all devices.
                                 </div>
                             </div>
                         </div>
+
                         <div class="card">
                             <div class="card-header" id="headingThree">
                                 <h2 class="mb-0">
-                                    <button class="btn btn-link collapsed zom" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                        03.Which Payment Support?
+                                    <button style="white-space: normal; width: 100%; text-align: left;" class="btn btn-link collapsed zom" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                        03. Can I edit my website anytime?
                                     </button>
                                 </h2>
                             </div>
+
                             <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
                                 <div class="card-body">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem ipsa fugiat, tempore sapiente amet illum, eius, aperiam facilis ad ipsam eveniet itaque recusandae illo debitis?
+                                    Yes, you can easily update your text, images, pages,
+                                    and content anytime using the easy admin dashboard
+                                    provided by WordPress.
                                 </div>
                             </div>
                         </div>
+
                     </div>
                 </div>
                 <div class="col-lg-4 mobile-space">
@@ -1117,95 +1160,228 @@
     ========================*/
     function insertCard(data){
 
-        const cardId =
-        data.cardid_ ||
-        generateCardId();
+            const cardId =
+            data.cardid_ ||
+            generateCardId();
 
-        const cardData = {
+            const cardData = {
 
-            mainImage:
-            data.mainImage || "",
+                num:
+                cardholder.length + 1,
 
-            title:
-            data.title || "",
+                type:
+                data.type || "",
 
-            previewslink:
-            data.previewslink || "#",
+                mainImage:
+                data.mainImage || "",
 
-            buyLink:
-            data.buyLink || "#",
+                title:
+                data.title || "",
 
-            cardid_:
-            cardId,
+                previewslink:
+                data.previewslink || "#",
 
-            discription:
-            data.discription || "",
+                buyLink:
+                data.buyLink || "#",
 
-            images:
-            data.images || []
+                cardid_:
+                cardId,
 
-        };
+                discription:
+                data.discription || "",
 
-        /* save object */
-        cardholder.push(cardData);
+                images:
+                data.images || []
 
-        /* create card */
-        const card =
-        document.createElement("div");
+            };
 
-        card.className =
-        "a8shd1";
+            /* save object */
+            cardholder.push(cardData);
 
-        card.setAttribute(
-            "cardid",
-            cardId
-        );
+            /* create card */
+            const card =
+            document.createElement("div");
 
-        card.innerHTML = `
-        
-            <div class="pq72hs">
+            card.className =
+            "a8shd1";
 
-                <div class="zx8sda">
+            card.setAttribute(
+                "cardid",
+                cardId
+            );
 
-                    <img src="${cardData.mainImage}">
+            card.innerHTML = `
+            
+                <div class="pq72hs">
+
+                    <div class="zx8sda">
+
+                        <img src="${cardData.mainImage}">
+
+                    </div>
+
+                    <h2 class="m2jd82">
+
+                        ${cardData.title}
+
+                    </h2>
+
+                    <span>
+
+                        ${cardData.type}
+
+                    </span>
 
                 </div>
 
-                <h2 class="m2jd82">
+                <div class="f8sh21">
 
-                    ${cardData.title}
+                    <a href="${cardData.buyLink}"
+                    class="hs7d91">
 
-                </h2>
+                        Buy
 
-            </div>
+                    </a>
 
-            <div class="f8sh21">
+                    <a href="${cardData.previewslink}"
+                    reviewid_s="${cardId}"
+                    class="jx82ka">
 
-                <a href="${cardData.buyLink}"
-                class="hs7d91">
+                        Preview
 
-                    Buy
+                    </a>
 
-                </a>
+                </div>
 
-                <a href="#"
-                reviewid="${cardId}"
-                class="jx82ka">
+            `;
 
-                    Preview
+            grid.appendChild(card);
 
-                </a>
+            updateCards();
 
-            </div>
+    }
 
-        `;
 
-        grid.appendChild(card);
+    function sortFunct(sorttype = "ASC", keytype = ""){
+
+        /* copy array */
+        let filteredCards =
+        [...cardholder];
+
+        /* filter type */
+        if(keytype !== ""){
+
+            filteredCards =
+            filteredCards.filter(card => {
+
+                return (
+                    card.type &&
+                    card.type.toLowerCase() ===
+                    keytype.toLowerCase()
+                );
+
+            });
+
+        }
+
+        /* sort array */
+        filteredCards.sort((a, b) => {
+
+            const valA =
+            Number(a.num);
+
+            const valB =
+            Number(b.num);
+
+            if(sorttype === "ASC"){
+
+                return valA - valB;
+
+            }else{
+
+                return valB - valA;
+
+            }
+
+        });
+
+        /* clear display */
+        grid.innerHTML = "";
+
+        /* render */
+        filteredCards.forEach(cardData => {
+
+            const card =
+            document.createElement("div");
+
+            card.className =
+            "a8shd1";
+
+            card.setAttribute(
+                "cardid",
+                cardData.cardid_
+            );
+
+            card.innerHTML = `
+            
+                <div class="pq72hs">
+
+                    <div class="zx8sda">
+
+                        <img src="${cardData.mainImage}">
+
+                    </div>
+
+                    <h2 class="m2jd82">
+
+                        ${cardData.num}. ${cardData.title}
+
+                    </h2>
+
+                    <span>
+
+                        ${cardData.type}
+
+                    </span>
+
+                </div>
+
+                <div class="f8sh21">
+
+                    <a href="${cardData.buyLink}"
+                    class="hs7d91">
+
+                        Buy
+
+                    </a>
+
+                    <a href="${cardData.previewslink}"
+                    reviewid_s="${cardData.cardid_}"
+                    class="jx82ka">
+
+                        Preview
+
+                    </a>
+
+                </div>
+
+            `;
+
+            grid.appendChild(card);
+
+        });
 
         updateCards();
 
     }
 
+
+
+    /* ascending */
+    // sortFunct("ASC");
+
+    /* descending */
+    // sortFunct("DESC");
     /*========================
     UPDATE CARDS
     ========================*/
@@ -1257,7 +1433,7 @@
     /*========================
     OPEN PANEL
     ========================*/
-    function openPanel(){
+    function openPanel(xxx, yyy){
 
         panel.style.zIndex =
         "9999999999999";
@@ -1272,6 +1448,8 @@
 
         document.body.style.width =
         "100%";
+
+        sortFunct(xxx, yyy);
 
     }
 
@@ -1330,13 +1508,14 @@
     SAMPLE INSERT
     ========================*/
     insertCard({
-
+        type:
+        "html",
         mainImage:
-        "https://i.imgur.com/J8qK5YI.png",
+        "https://hlord-g.github.io/ProjectV01/Branding%20Agency.jpg",
         title:
-        "RoketX",
+        "Branding Agency",
         previewslink:
-        "#",
+        "https://hlord-g.github.io/ProjectV01/",
         buyLink:
         "#4",
         discription:
@@ -1348,13 +1527,14 @@
     });
 
     insertCard({
-
+        type:
+        "wordpress",
         mainImage:
-        "https://i.imgur.com/J8qK5YI.png",
+        "https://hlord-g.github.io/ProjectV02/Architecture.jpg",
         title:
-        "RoketX",
+        "Architecture",
         previewslink:
-        "#",
+        "https://hlord-g.github.io/ProjectV02/",
         buyLink:
         "#3",
         discription:
@@ -1367,13 +1547,14 @@
 
 
     insertCard({
-
+        type:
+        "wordpress",
         mainImage:
-        "https://i.imgur.com/J8qK5YI.png",
+        "https://hlord-g.github.io/ProjectV03/real-estate.jpg",
         title:
-        "RoketX",
+        "real-estate",
         previewslink:
-        "#",
+        "https://hlord-g.github.io/ProjectV03/",
         buyLink:
         "#2",
         discription:
